@@ -1,0 +1,14 @@
+ local storage, 
+ *** it's just a key value store. So we can name a key like name. We can give it a value like Andrew,
+ eg
+ *** 
+ localStorage.setItem(key, value)
+
+ localStorage.getItem(key)
+
+
+there's two JSON methods 
+ JSON stringify() :regular JavaScript object and get the string representation : 
+ JSON.stringify({name : 'Shaza'})  =>  '{"name":"Shaza"}'
+
+Jason.parse()  is going to take the string representation and return a true JavaScript object.

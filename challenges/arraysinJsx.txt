@@ -1,0 +1,15 @@
+open js expression by {}
+
+arrays of jsx: each element shd have a key example :
+      {[<p key="1">A</p>, <p key ="2">B</p>, <p key="3">C</p>]}
+
+      //challenge : 
+
+      const numbers = [11,22,33,44,55]
+     {
+
+        numbers.map( (number)=>{
+            return <p key="{number}">Number : {number}</p>
+        })
+      }
+

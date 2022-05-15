@@ -1,0 +1,49 @@
+src => styles folder
+
+https://www.npmjs.com/package/css-loader
+https://www.npmjs.com/package/style-loader
+
+yarn add style-loader@0.18.2 css-loader@0.28.4
+
+in src app.js : import it
+import './styles/styles.css'
+
+ module : {
+        rules : [{
+            loader :'babel-loader',
+            test : /\.js$/,
+            exclude: /node_modules/
+        },{
+            test : /\.scss$/,
+            use :[
+                'style-loader',
+                'css-loader'
+            ]
+        }]
+    },
+    =================================================================
+    https://sass-lang.com/documentation/variables
+
+    scss need install loader : 
+ yarn add sass-loader@6.0.6 node-sass@4.14.0
+
+normalize css:Normalize.css makes browsers render all elements more consistently
+ and in line with modern standards. 
+ It precisely targets only the styles that need normalizing.
+https://necolas.github.io/normalize.css/
+
+ {
+                test: /\.s?css$/,
+                use: [
+                  'style-loader',
+                  'css-loader',
+                  'sass-loader'
+                ]
+              }
+
+
+
+at app.js
+import 'normalize.css/normalize.css'
+
+

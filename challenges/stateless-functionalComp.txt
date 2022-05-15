@@ -1,0 +1,24 @@
+ these stateless functional component, it's an alternative to our class based components.
+
+ #When to use?
+That means they're concerned with just the presentation of information.
+They're not concerned with managing complex state share
+
+#What can not do>
+1- Functional components do not have access to 'this'. so Will the props get passed in to function as the first argument
+2-First up, they are faster than our class based components.do not have to manage states or lifecycles
+3- they are much easier to test.
+
+example :
+const User = (props)=>{
+  return (
+
+    <div>
+    
+    <p> Name: {props.name}</p>
+    <p> Age: {}props.age</p>
+    </div>
+  )
+}
+
+ReactDOM.render(<User name= "Shaza" age={11} />, document.getElementById("app"));

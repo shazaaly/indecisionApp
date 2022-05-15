@@ -1,0 +1,31 @@
+addOne() {
+    this.setState((prevState) => {
+      return {
+        count: prevState.count + 1,
+      };
+    });
+  }
+
+
+  setState function returms an object , inside a constructor based function:
+  example:
+
+  class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.addOne = this.addOne.bind(this);
+    this.resetCounter = this.resetCounter.bind(this);
+    this.minusOne = this.minusOne.bind(this);
+    this.state = {
+      count: 0,
+    };
+  }
+  addOne() {
+    this.setState((prevState) => {
+      return {
+        count: prevState.count + 1,
+      };
+    });
+  }
+
+  -setState call is async

@@ -1,0 +1,19 @@
+1- So in the end of the day, when we run our app through Westpac,
+ we're going to get a single JavaScript file back.
+
+ #And that file, what's called the bundle, is going to contain everything our application needs to run.
+
+It is going to contain our dependencies. It is also going to contain our application code.
+
+2-Needing to make all of those requests before your app even runs can take a lot of time.
+So instead, we're just going to make a single request for a single script file.
+
+3-we're also going to be able to install dependencies via yarn and NPM and use those in here.
+4-directory structure:
+a source folder for our client side JavaScript, and we have a node modules 
+folder which is going to contain, third party dependencies like react and react.
+5- Alias
+
+
+
+yarn add live-server babel-cli@6.24.1  //install locally

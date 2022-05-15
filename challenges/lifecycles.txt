@@ -1,0 +1,11 @@
+
+1-componentDidMount(): only in class based components
+2-componentDidUpdate():  after the state values change or after the prop values change, example:
+ That means we can do something when the options array changes., alse has access to this.props and this.state
+ 
+
+   componentDidUpdate(prevState, prevProps){
+    console.log('update')
+  }
+
+  3-

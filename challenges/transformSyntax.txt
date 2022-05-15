@@ -1,0 +1,6 @@
+class NewSyntax {
+  name  =  'shazaa'
+
+}
+const synt = new NewSyntax()
+console.log(synt.name)

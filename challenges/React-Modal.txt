@@ -1,0 +1,2 @@
+https://github.com/reactjs/react-modal#installation
+
